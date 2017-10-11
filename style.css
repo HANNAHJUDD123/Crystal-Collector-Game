@@ -1,0 +1,76 @@
+body {
+	padding: 0;
+	margin: 0; 
+	font-family: 'Slabo 27px', serif;
+	font-size: 18px;
+	line-height: 150%;
+	background: url(https://i.pinimg.com/originals/be/2a/94/be2a940c4ac312bf5abc0aa9677749de.jpg);
+	size: 100%;
+}
+
+#computerRanNum {
+	background-color: white;
+	width: 184px;
+	height: 170px;
+	font-family: 'Slabo 27px', serif;
+	color: black;
+	text-align: center;
+	padding-top: 79px;
+	float: right;
+	margin-right: 22px;
+	margin-top: 108px;
+
+}
+
+.crystalsPics {
+	clear: both;
+	width: 200px;
+	height: 200px;
+	font-family: 'Slabo 27px', serif;
+	color: yellow;
+}
+
+.crystalDiv {
+	margin-top: 108px;
+}
+
+.secondCrystal {
+	margin-top: 5px;
+}
+
+#finalTotal {
+	background-color: white;
+	width: 184px;
+	height: 178px;
+	font-family: 'Slabo 27px', serif;
+	color: black;
+	text-align: center;
+	padding-top: 79px;
+	float: right;
+	margin-right: 22px;
+	margin-top: -179px;
+
+}
+
+.scoreCounter {
+	background-color: white;
+	width: 184px;
+	height: 96px;
+	font-family: 'Slabo 27px', serif;
+	color: black;
+	text-align: center;
+	padding-top: 23px;
+	float: right;
+	margin-right: 22px;
+	margin-top: -283px;
+
+}
+
+.crystalP1 {
+	font-family: 'Homemade Apple', cursive;
+	clear: both;
+	text-align: center;
+	margin-top: 56px;
+	margin-bottom: -39px;
+	color: pink;
+}
