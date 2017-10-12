@@ -6,7 +6,7 @@ var losses = 0;
 var computerRanNum = Math.floor(Math.random()*101+19);
 var userTotal = 0;
 
-function crystalsRanNum() { return Math.ceil(Math.random()*11); }
+function crystalsRanNum() { return Math.ceil(Math.random()*22-11); }
 
 
 function randomCrystalNumbers() {
@@ -33,6 +33,7 @@ $('#numberLosses').text(losses);
 
 //resets the game
 function reset(){
+      console.log("resetting");
       computerRanNum=Math.floor(Math.random()*101+19);
       $('#computerRanNum').text(computerRanNum);
       randomCrystalNumbers() 
@@ -48,21 +49,21 @@ function reset(){
     console.log("New userTotal= " + userTotal);
     $('#finalTotal').text(userTotal); 
           //sets win/lose conditions
-        if (userTotal === computerRanNum) {
-          $('#status').text('You won!!!!')
-          wins ++;
-          $('#win').text(wins);
-          console.log('you WON ' + wins)
-          randomCrystalNumbers();
-          reset()
-        } else if ( userTotal > computerRanNum) {
-          $('#status').text('You lost!')
-            losses ++;
-            $('#losses').text(losses);
-            console.log("you lost " + losses)
-            randomCrystalNumbers();
-            reset()
-        }  
+    if (userTotal === computerRanNum) {
+      $('#status').text('You won!!!!')
+      wins ++;
+      $('#win').text(wins);
+      console.log('you WON ' + wins)
+      randomCrystalNumbers();
+      reset()
+    } else if ( userTotal > computerRanNum) {
+      $('#status').text('You lost!')
+        losses ++;
+        $('#losses').text(losses);
+        console.log("you lost " + losses)
+        randomCrystalNumbers();
+        reset()
+    }  
     });
 
 
